@@ -1,6 +1,6 @@
 import MySQLdb
 
-myDB = MySQLdb.connect(host="localhost",port=3306,user="usuario",passwd="usuario",db="parrillas")
+myDB = MySQLdb.connect(host="janserver",port=3306,user="root",passwd="f1password")
 cHandler = myDB.cursor()
 cHandler.execute("SHOW DATABASES")
 results = cHandler.fetchall()
